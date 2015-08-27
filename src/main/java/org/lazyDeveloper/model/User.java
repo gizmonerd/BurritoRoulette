@@ -1,8 +1,9 @@
 package org.lazyDeveloper.model;
 
-public class User {
+public class User{
 
 	private Long userId;
+	private String userName;
 	private String firstName;
 	private String lastName;
 	
@@ -23,6 +24,17 @@ public class User {
 	}
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", userName=" + userName
+				+ ", firstName=" + firstName + ", lastName=" + lastName + "]";
 	}
 	
 	
